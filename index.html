@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Abdhul Rahmaan — A/L ICT Student & Aspiring Web Developer." />
+  <title>Abdhul Rahmaan | Web Developer Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="cursor-glow"></div>
+
+  <header class="navbar" id="navbar">
+    <a href="#home" class="logo">&lt;AR<span>/&gt;</span></a>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#home" class="active">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-grid"></div>
+      <div class="hero-content reveal">
+        <p class="eyebrow"><span></span> AVAILABLE FOR LEARNING & COLLABORATION</p>
+        <h1>Hi, I'm <span>Abdhul Rahmaan</span></h1>
+        <h2>A/L ICT Student <b>&amp;</b> Aspiring Web Developer</h2>
+        <p class="hero-text">
+          I build modern web experiences while growing my skills in programming,
+          databases, UI design, and software development.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">View My Projects <span>↗</span></a>
+          <a href="cv.pdf" class="btn btn-secondary" download>Download CV <span>↓</span></a>
+          <a href="#contact" class="btn btn-secondary">Contact Me <span>→</span></a>
+        </div>
+        <div class="hero-socials">
+          <a href="#" class="social-placeholder" data-placeholder="GitHub URL">GitHub</a>
+          <a href="#" class="social-placeholder" data-placeholder="LinkedIn URL">LinkedIn</a>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal">
+        <div class="code-window glass">
+          <div class="window-bar">
+            <div class="window-dots"><i></i><i></i><i></i></div>
+            <span>developer.js</span>
+          </div>
+          <pre><code><span class="code-purple">const</span> developer = {
+  name: <span class="code-green">"Abdhul Rahmaan"</span>,
+  role: <span class="code-green">"Aspiring Web Developer"</span>,
+  learning: [
+    <span class="code-green">"HTML"</span>,
+    <span class="code-green">"CSS"</span>,
+    <span class="code-green">"JavaScript"</span>,
+    <span class="code-green">"PHP"</span>,
+    <span class="code-green">"MySQL"</span>
+  ],
+  mindset: <span class="code-green">"Keep Learning"</span>
+};</code></pre>
+          <div class="code-status"><span></span> Building the next idea...</div>
+        </div>
+      </div>
+      <div class="scroll-indicator">SCROLL <span>↓</span></div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="section-heading reveal">
+        <p class="section-tag">01 / ABOUT</p>
+        <h2>Turning curiosity into <span>digital skills.</span></h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-card glass reveal">
+          <div class="card-icon">⌁</div>
+          <h3>Who I Am</h3>
+          <p>
+            I am an A/L ICT student passionate about technology, web development,
+            programming, and learning new digital skills. I enjoy building websites,
+            experimenting with HTML and CSS, and improving my knowledge of databases
+            and software development.
+          </p>
+          <p>
+            I am currently developing my skills and working towards becoming a
+            professional web developer.
+          </p>
+        </div>
+        <div class="about-side reveal">
+          <div class="mini-card glass"><strong>A/L</strong><span>Current Education</span></div>
+          <div class="mini-card glass"><strong>WEB</strong><span>Learning & Building</span></div>
+          <div class="mini-card glass"><strong>∞</strong><span>Curiosity to Learn</span></div>
+          <div class="mini-card glass"><strong>01</strong><span>Step at a Time</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="section-heading reveal">
+        <p class="section-tag">02 / SKILLS</p>
+        <h2>Tools I use to <span>build & learn.</span></h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-card glass reveal" data-skill="Frontend">
+          <span class="skill-number">01</span><div class="skill-icon">&lt;/&gt;</div>
+          <h3>HTML5</h3><p>Semantic and structured web pages.</p>
+        </div>
+        <div class="skill-card glass reveal" data-skill="Frontend">
+          <span class="skill-number">02</span><div class="skill-icon">#</div>
+          <h3>CSS3</h3><p>Modern layouts, effects, and responsive design.</p>
+        </div>
+        <div class="skill-card glass reveal" data-skill="Frontend">
+          <span class="skill-number">03</span><div class="skill-icon">JS</div>
+          <h3>JavaScript</h3><p>Interactive and dynamic web experiences.</p>
+        </div>
+        <div class="skill-card glass reveal" data-skill="Backend">
+          <span class="skill-number">04</span><div class="skill-icon">DB</div>
+          <h3>MySQL</h3><p>Basic database design and management.</p>
+        </div>
+        <div class="skill-card glass reveal" data-skill="Backend">
+          <span class="skill-number">05</span><div class="skill-icon">PHP</div>
+          <h3>PHP</h3><p>Learning server-side web development.</p>
+        </div>
+        <div class="skill-card glass reveal" data-skill="Tools">
+          <span class="skill-number">06</span><div class="skill-icon">X</div>
+          <h3>XAMPP</h3><p>Local development and testing environment.</p>
+        </div>
+        <div class="skill-card glass reveal" data-skill="Tools">
+          <span class="skill-number">07</span><div class="skill-icon">GH</div>
+          <h3>Git &amp; GitHub</h3><p>Version control and project sharing.</p>
+        </div>
+        <div class="skill-card glass reveal" data-skill="Design">
+          <span class="skill-number">08</span><div class="skill-icon">UI</div>
+          <h3>UI &amp; Responsive Design</h3><p>Clean interfaces for different screen sizes.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="section-heading reveal">
+        <p class="section-tag">03 / PROJECTS</p>
+        <h2>Things I've <span>built & explored.</span></h2>
+      </div>
+
+      <div class="filter-bar reveal">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="web">Web</button>
+        <button class="filter-btn" data-filter="learning">Learning</button>
+      </div>
+
+      <div class="projects-grid">
+        <article class="project-card glass reveal" data-category="web">
+          <div class="project-preview preview-portfolio">
+            <span class="preview-label">&lt; PORTFOLIO /&gt;</span>
+            <div class="preview-lines"></div>
+          </div>
+          <div class="project-body">
+            <div class="project-meta"><span>01</span><span>WEB</span></div>
+            <h3>Personal Portfolio Website</h3>
+            <p>A modern responsive portfolio website showcasing my skills, projects, and learning journey.</p>
+            <div class="tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
+            <div class="project-links">
+              <a href="#" class="placeholder-link">GitHub ↗</a>
+              <a href="#" class="placeholder-link">Demo ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card glass reveal" data-category="web">
+          <div class="project-preview preview-gaming">
+            <span class="preview-label">GAME // HUB</span>
+            <div class="gaming-shape"></div>
+          </div>
+          <div class="project-body">
+            <div class="project-meta"><span>02</span><span>WEB</span></div>
+            <h3>Gaming Website</h3>
+            <p>A gaming-themed website designed with a modern dark interface, gaming cards, navigation, and responsive layout.</p>
+            <div class="tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
+            <div class="project-links">
+              <a href="#" class="placeholder-link">GitHub ↗</a>
+              <a href="#" class="placeholder-link">Demo ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card glass reveal" data-category="learning">
+          <div class="project-preview preview-student">
+            <span class="preview-label">LEARNING / LAB</span>
+            <div class="terminal-lines"><i></i><i></i><i></i></div>
+          </div>
+          <div class="project-body">
+            <div class="project-meta"><span>03</span><span>LEARNING</span></div>
+            <h3>Student Web Projects</h3>
+            <p>Small HTML/CSS/JavaScript projects created while learning web development.</p>
+            <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+            <div class="project-links">
+              <a href="#" class="placeholder-link">GitHub ↗</a>
+              <a href="#" class="placeholder-link">Demo ↗</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="education">
+      <div class="section-heading reveal">
+        <p class="section-tag">04 / EDUCATION</p>
+        <h2>Learning today. <span>Building tomorrow.</span></h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item glass reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-year">CURRENT</div>
+          <div>
+            <h3>G.C.E. Advanced Level (A/L) Student</h3>
+            <p>Currently studying:</p>
+            <div class="subject-list"><span>ICT</span><span>Business Studies</span><span>Accounting</span></div>
+          </div>
+        </div>
+        <div class="timeline-item glass reveal future-card">
+          <div class="timeline-dot"></div>
+          <div class="timeline-year">FUTURE</div>
+          <div>
+            <h3>Certifications</h3>
+            <p>This space is reserved for future certifications. No certifications have been added yet.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="contact-wrap glass reveal">
+        <div class="contact-info">
+          <p class="section-tag">05 / CONTACT</p>
+          <h2>Let's build something <span>interesting.</span></h2>
+          <p>
+            Have a project idea, learning opportunity, or just want to connect?
+            Send a message using the form.
+          </p>
+          <div class="contact-detail">
+            <span>EMAIL</span>
+            <strong class="editable-email">[YOUR EMAIL HERE]</strong>
+            <small>Replace this placeholder with your email address.</small>
+          </div>
+          <div class="contact-socials">
+            <a href="#" class="social-placeholder">GitHub ↗</a>
+            <a href="#" class="social-placeholder">LinkedIn ↗</a>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contactForm">
+          <label>Name<input type="text" name="name" placeholder="Your name" required></label>
+          <label>Email<input type="email" name="email" placeholder="Your email" required></label>
+          <label>Message<textarea name="message" rows="6" placeholder="Write your message..." required></textarea></label>
+          <button class="btn btn-primary" type="submit">Send Message <span>↗</span></button>
+          <p class="form-note" id="formNote"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <a href="#home" class="logo">&lt;AR<span>/&gt;</span></a>
+      <p>Designed &amp; built by Abdhul Rahmaan.</p>
+      <p>© <span id="year"></span> Abdhul Rahmaan</p>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+  <script src="script.js"></script>
+</body>
+</html>
