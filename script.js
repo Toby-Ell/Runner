@@ -1,0 +1,21 @@
+const header=document.getElementById("siteHeader");
+const menuToggle=document.getElementById("menuToggle");
+const navMenu=document.getElementById("navMenu");
+const pageProgress=document.getElementById("pageProgress");
+const year=document.getElementById("year");
+const backTop=document.getElementById("backTop");
+const contactForm=document.getElementById("contactForm");
+const formNote=document.getElementById("formNote");
+year.textContent=new Date().getFullYear();
+menuToggle.addEventListener("click",()=>{const open=navMenu.classList.toggle("open");menuToggle.setAttribute("aria-expanded",String(open));});
+navMenu.querySelectorAll("a").forEach(link=>link.addEventListener("click",()=>{navMenu.classList.remove("open");menuToggle.setAttribute("aria-expanded","false");}));
+function updateScrollUI(){const scrollable=document.documentElement.scrollHeight-window.innerHeight;pageProgress.style.width=`${scrollable>0?(window.scrollY/scrollable)*100:0}%`;header.classList.toggle("scrolled",window.scrollY>20);let activeId="home";document.querySelectorAll("main section[id]").forEach(section=>{if(window.scrollY>=section.offsetTop-180)activeId=section.id;});navMenu.querySelectorAll("a").forEach(link=>link.classList.toggle("active",link.getAttribute("href")===`#${activeId}`));}
+window.addEventListener("scroll",updateScrollUI,{passive:true});updateScrollUI();
+backTop.addEventListener("click",event=>{event.preventDefault();window.scrollTo({top:0,behavior:"smooth"});});
+const revealObserver=new IntersectionObserver((entries,observer)=>{entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add("visible");observer.unobserve(entry.target);}});},{threshold:.12});
+document.querySelectorAll(".reveal").forEach(item=>revealObserver.observe(item));
+document.querySelectorAll(".skill-filter").forEach(button=>button.addEventListener("click",()=>{document.querySelectorAll(".skill-filter").forEach(item=>item.classList.remove("active"));button.classList.add("active");const filter=button.dataset.skillFilter;document.querySelectorAll(".skill-unit").forEach(card=>card.classList.toggle("filtered-out",filter!=="all"&&card.dataset.skill!==filter));}));
+document.querySelectorAll(".project-filter").forEach(button=>button.addEventListener("click",()=>{document.querySelectorAll(".project-filter").forEach(item=>item.classList.remove("active"));button.classList.add("active");const filter=button.dataset.filter;document.querySelectorAll(".mission-card").forEach(card=>card.classList.toggle("filtered-out",filter!=="all"&&card.dataset.category!==filter));}));
+document.querySelectorAll(".placeholder-link").forEach(link=>link.addEventListener("click",event=>{if(link.getAttribute("href")==="#"){event.preventDefault();alert(`Edit this placeholder and add your ${link.dataset.name||"link"}.`);}}));
+contactForm.addEventListener("submit",event=>{event.preventDefault();formNote.textContent="Demo only: connect this form to an email or backend service to receive messages.";contactForm.reset();});
+const cursorAura=document.querySelector(".cursor-aura");window.addEventListener("pointermove",event=>{cursorAura.style.left=`${event.clientX}px`;cursorAura.style.top=`${event.clientY}px`;},{passive:true});
